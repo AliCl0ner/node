@@ -41,7 +41,7 @@ func checkVless(inbound *Inbound, account api.VlessAccount) api.VlessAccount {
 	if account.Flow != "" {
 
 		networkType, ok := inbound.StreamSettings["network"]
-		if !ok || !(networkType == "tcp" || networkType == "raw" || networkType == "kcp") {
+		if !ok || !(networkType == "tcp" || networkType == "raw" || networkType == "kcp" || networkType == "xhttp") {
 			account.Flow = ""
 			return account
 		}
