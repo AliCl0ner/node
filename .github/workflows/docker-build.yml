@@ -6,10 +6,10 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE: pasarguard/${{ github.event.repository.name }}:${{ github.ref_name }}
-  GHCR_IMAGE: ghcr.io/pasarguard/${{ github.event.repository.name }}:${{ github.ref_name }}
-  IMAGE_LATEST: pasarguard/${{ github.event.repository.name }}:latest
-  GHCR_IMAGE_LATEST: ghcr.io/pasarguard/${{ github.event.repository.name }}:latest
+  IMAGE: alicl0ner/${{ github.event.repository.name }}:${{ github.ref_name }}
+  GHCR_IMAGE: ghcr.io/alicl0ner/${{ github.event.repository.name }}:${{ github.ref_name }}
+  IMAGE_LATEST: alicl0ner/${{ github.event.repository.name }}:latest
+  GHCR_IMAGE_LATEST: ghcr.io/alicl0ner/${{ github.event.repository.name }}:latest
 
 jobs:
   build-and-push:
